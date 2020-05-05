@@ -1,4 +1,7 @@
-# vue-sticky-notes
+# vue-sticky-notes :pencil2:
+A note taking app built with Vue.js and localStorage daha persistence.
+
+![](https://s6.gifyu.com/images/sticky-notes.gif)
 
 ## Project setup
 ```
