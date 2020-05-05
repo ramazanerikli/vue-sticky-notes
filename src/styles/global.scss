@@ -1,0 +1,183 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+    background: #ebebeb;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+::placeholder {
+    color: #ccc;
+    font-size: 15px;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.categories {
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+.categories li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.categories li a {
+    display: flex;
+    align-items: center;
+}
+
+.categories input {
+    display: none;
+}
+
+.categories label {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.title-input {
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.title-input::placeholder {
+    font-size: 18px;
+}
+
+
+
+.note-editor {
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 16px;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+    border-radius: 3px;
+    textarea {
+        padding: 10px;
+        resize: none;
+        border: none;
+        &:hover {
+            outline: 0;
+        }
+        &:focus {
+            outline: 0;
+        }
+    }
+    .add-btn {
+        padding: 5px 10px;
+        background: transparent;
+        border-radius: 30px;
+        border: none;
+        color: #000;
+        outline: none;
+        font-size: 20px;
+        cursor: pointer;
+    }   
+}
+
+.note-title {
+    margin-right: 15px;
+    outline: none;
+}
+
+.noteContainer {
+    column-count: 4;
+    column-gap: 1em;
+    margin: 50px 25px;
+}
+
+
+.note {
+    position: relative;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px rgba(0,90,250,0.05),
+      0 4px 4px rgba(0,90,250,0.05),
+      0 8px 8px rgba(0,90,250,0.05),
+      0 16px 16px rgba(0,90,250,0.05);
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    word-break: break-word;
+    cursor: pointer;
+    grid-row-end: span 1;
+}
+
+.note-editor-bottom {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.color-picker   {
+    padding-left: 10px;
+    margin-right: auto;
+    span {
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+        display: inline-block;
+        border-radius: 50%;
+        font-size: 0;
+        cursor: pointer;
+    }
+    label {
+        width: 23px;
+        height: 23px;
+        margin-right: 5px;
+        display: inline-block;
+        border-radius: 50%;
+        font-size: 0;
+        border: 2px solid transparent;
+        cursor: pointer;
+        &:hover {
+            border-color: rgba(0,0,0,0.4);
+        }
+    }
+    input {
+        display: none;
+    }
+}
+
+
+.delete {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
